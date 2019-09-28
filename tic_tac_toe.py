@@ -18,7 +18,7 @@ if choice=='P' or choice=='p':
             if check_column(a,b,c,player_name) or check_row(a,b,c,player_name) or check_diagonal(a,b,c,player_name):
                 ch=1
                 break
-        if i%2!=0:
+        if i%2!==0:
             while put_o(a,b,c):
                 continue
             print_board(a,b,c)
@@ -27,7 +27,7 @@ if choice=='P' or choice=='p':
                 break
 elif choice=='C' or choice=='c':
     for i in range(9):
-        if i%2!=0:
+        if i%2!==0:
             while put_x(a,b,c):
                 continue
             print_board(a,b,c)
